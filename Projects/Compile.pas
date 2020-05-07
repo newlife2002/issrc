@@ -388,7 +388,7 @@ type
 
     SetupDirectiveLines: array[TSetupSectionDirectives] of Integer;
     UseSetupLdr, DiskSpanning, BackSolid, TerminalServicesAware, DEPCompatible, ASLRCompatible: Boolean;
-    DiskSliceSize, DiskClusterSize, SlicesPerDisk, ReserveBytes: Longint;
+    DiskSliceSize, DiskClusterSize, SlicesPerDisk, ReserveBytes: Int64;
     LicenseFile, InfoBeforeFile, InfoAfterFile, WizardImageFile: String;
     WizardSmallImageFile: String;
     DefaultDialogFontName: String;
@@ -555,7 +555,7 @@ const
 
   DefaultTypeEntryNames: array[0..2] of PChar = ('full', 'compact', 'custom');
 
-  MaxDiskSliceSize = 2100000000;
+  MaxDiskSliceSize = 2100000000000;
 
 type
   TColor = $7FFFFFFF-1..$7FFFFFFF;
